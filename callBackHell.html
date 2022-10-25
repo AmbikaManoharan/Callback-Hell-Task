@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #count {
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+            background-color: navy;
+            font-size: 3cm;
+            text-align: center;
+            color: white;
+        }
+
+        h3 {
+            color: green;
+            font-size: 2cm;
+        }
+
+        h4 {
+            color: orangered;
+            font-size: 2cm;
+        }
+
+        h2 {
+            color: white;
+            font-size: 5cm;
+        }
+
+        h5 {
+            color: white;
+            font-size: 2cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="count">Count Down Starts</div>
+    <script>
+        //Callback Hell method
+
+        setTimeout(timer1, 1000)
+        function timer1() {
+            console.log("10")
+            var division1 = document.getElementById('count')
+            division1.innerHTML = `<h2>10</h2>`
+            division1.setAttribute('class', 'container')
+            document.body.append(division1)
+            setTimeout(timer2, 1000)
+            function timer2() {
+                console.log("9")
+                var division1 = document.getElementById('count')
+                division1.innerHTML = `<h2>9</h2>`
+                division1.setAttribute('class', 'container')
+                document.body.append(division1)
+                setTimeout(timer3, 1000)
+                function timer3() {
+                    console.log("8")
+                    var division1 = document.getElementById('count')
+                    division1.innerHTML = `<h2>8</h2>`
+                    division1.setAttribute('class', 'container')
+                    document.body.append(division1)
+                    setTimeout(timer4, 1000)
+                    function timer4() {
+                        console.log("7")
+                        var division1 = document.getElementById('count')
+                        division1.innerHTML = `<h2>7</h2>`
+                        division1.setAttribute('class', 'container')
+                        document.body.append(division1)
+                        setTimeout(timer5, 1000)
+                        function timer5() {
+                            console.log("6")
+                            var division1 = document.getElementById('count')
+                            division1.innerHTML = `<h2>6</h2>`
+                            division1.setAttribute('class', 'container')
+                            document.body.append(division1)
+                            setTimeout(timer6, 1000)
+                            function timer6() {
+                                console.log("5")
+                                var division1 = document.getElementById('count')
+                                division1.innerHTML = `<h2>5</h2>`
+                                division1.setAttribute('class', 'container')
+                                document.body.append(division1)
+                                setTimeout(timer7, 1000)
+                                function timer7() {
+                                    console.log("4")
+                                    var division1 = document.getElementById('count')
+                                    division1.innerHTML = `<h2>4</h2>`
+                                    division1.setAttribute('class', 'container')
+                                    document.body.append(division1)
+                                    setTimeout(timer8, 1000)
+                                    function timer8() {
+                                        console.log("3")
+                                        var division1 = document.getElementById('count')
+                                        division1.innerHTML = `<h2>3</h2>`
+                                        division1.setAttribute('class', 'container')
+                                        document.body.append(division1)
+                                        setTimeout(timer9, 1000)
+                                        function timer9() {
+                                            console.log("2")
+                                            var division1 = document.getElementById('count')
+                                            division1.innerHTML = `<h2>2</h2>`
+                                            division1.setAttribute('class', 'container')
+                                            document.body.append(division1)
+                                            setTimeout(timer10, 1000)
+                                            function timer10() {
+                                                console.log("1")
+                                                var division1 = document.getElementById('count')
+                                                division1.innerHTML = `<h2>1</h2>`
+                                                division1.setAttribute('class', 'container')
+                                                document.body.append(division1)
+                                                setTimeout(timer11, 1000)
+                                                function timer11() {
+                                                    console.log("HAPPY INDEPENDNCE DAY")
+                                                    var division1 = document.getElementById('count')
+                                                    division1.innerHTML = `<h4>HAPPY</h4><h5>INDEPENDENCE</h5><h3>DAY!!</h3>`
+                                                    division1.setAttribute('class', 'container')
+                                                    document.body.append(division1)
+
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
